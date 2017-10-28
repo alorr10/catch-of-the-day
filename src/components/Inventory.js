@@ -62,6 +62,7 @@ class Inventory extends React.Component {
           placeholder="Fish image"
           onChange={(e) => this.handleChange(e, key)}
         />
+        <button onClick={() => this.props.removeFish(key)}> Remove Fish</button>
       </div>
     )
   }
